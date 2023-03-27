@@ -3,27 +3,47 @@ import {NavLink} from 'react-router-dom';
 import './Header.scss';
 
 function Header() {
-	const [burgerMenu, setBurgerMenu] = React.useState(false);
-
-	const [modalInscription, setModalInscription] = React.useState(false);
+	// Code to trigger the modal to open or not using react useState
+	const [modalTaipei, setModalTaipei] = React.useState(false);
 
 	function openModal() {
-		setModalInscription(true);
+		setModalTaipei(true);
 	}
 
 	function closeModal() {
-		setModalInscription(false);
+		setModalTaipei(false);
 	}
+
+	// Style for the Modal, if I only code it in CSS, the modal doesn't keep the style. That's the way I found to keep it styled
+	const modalStyle: React.CSSProperties = {
+		position: 'fixed',
+		left: 0,
+		backgroundColor: '#fff',
+		zIndex: 1,
+		width: '80%',
+	};
 
 	return (
 		<div className='header-container'>
 			<nav className='header-nav'>
-				<ul className='header-ul'>Taipei</ul>
+				<ul className='header-ul' onClick={openModal}>
+					Taipei
+					{/* Conditionnal condition, when the modal is triggered by the onMouseOver in the ul right above, it trigger
+					the function openModal that setup the state to true, which make it show the modal   */}
+					{modalTaipei && (
+						<div className='modal-taipei-container'>
+							<span>Taipei 101</span>
+							<span> Marché nocturne</span>
+							<span>Marché du poisson</span>
+						</div>
+					)}
+				</ul>
+
 				<ul className='header-ul'>La cuisine</ul>
 				<ul className='header-ul'>Infos Visa</ul>
 				<ul className='header-ul'>Se connecter</ul>
 
-				<NavLink className='header-navlink' to='/inscription' onMouseOver={openModal} onMouseOut={closeModal}>
+				<NavLink className='header-navlink' to='/inscription'>
 					Rejoignez-nous
 					{/* {modalInscription && (
 						<div className='inscription-container'>

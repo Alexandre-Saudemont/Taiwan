@@ -7,6 +7,7 @@ const config = {
 		messagingSenderId: '147739918059',
 		appId: '1:147739918059:web:5d5ea3d7afee3e343d48ae',
 		measurementId: 'G-39F7XJPY1Y',
+		returnSecureToken: true,
 	},
 };
 

@@ -9,8 +9,18 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	width: 100%;
+	width: 80%;
+	margin: auto;
 }
 
-.header-ul {
+.modal-taipei-container {
+	background-color: white;
+	width: 70%;
+	height: 10%;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	align-items: center;
+	flex-wrap: wrap;
+	top: 2.6rem;
 }
