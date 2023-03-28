@@ -13,7 +13,8 @@
 	margin: auto;
 }
 
-.modal-taipei-container {
+// Submenu that open when you mouse over the nav
+.modal-submenu-navbar-container {
 	background-color: white;
 	width: 70%;
 	height: 10%;
@@ -22,5 +23,7 @@
 	position: fixed;
 	align-items: center;
 	flex-wrap: wrap;
-	top: 2.6rem;
+	top: 7.1%;
+	left: 15%;
+	right: 15%;
 }
