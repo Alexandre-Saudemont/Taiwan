@@ -13,6 +13,11 @@
 	margin: auto;
 }
 
+.header-nav-title {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
 // Submenu that open when you mouse over the nav
 .modal-submenu-navbar-container {
 	background-color: white;
