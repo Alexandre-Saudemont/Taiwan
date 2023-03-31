@@ -5,6 +5,7 @@ import Taipei from '../Components/Taipei/Taipei';
 import Cuisine from '../Components/Cuisine/Cuisine';
 // we import the data in order to have a dynamic direction bsed on the title of the element and the content
 import datas from '../datas/datas';
+import TaipeiNight from '../Components/Taipei/TaipeiNight/TaipeiNight';
 
 const router = createBrowserRouter([
 	{
@@ -12,13 +13,14 @@ const router = createBrowserRouter([
 		element: <App />,
 		children: [
 			{
-				path: `${datas[0].title}/${datas[0].content1}`,
-				element: <Taipei />,
+				// path: `${datas[0].title}/${datas[0].content1}`,
+				path: `${datas[0].title}/${datas[0]?.subMenu[0]?.label}`,
+				element: <TaipeiNight />,
 			},
-			{
-				path: `${datas[0].title}/${datas[0].content2}`,
-				element: <Taipei />,
-			},
+			// {
+			// 	path: `${datas[0].title}/${datas[0].content2}`,
+			// 	element: <Taipei />,
+			// },
 		],
 	},
 	{

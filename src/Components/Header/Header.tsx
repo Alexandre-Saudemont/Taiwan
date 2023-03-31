@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import {NavLink, useNavigate} from 'react-router-dom';
 import './Header.scss';
 import datas from '../../datas/datas';
+
 function Header() {
 	// Code to trigger the modal to open or not using react useState
 	const [hoverTitle, setHoverTitle] = React.useState(null);
@@ -14,12 +15,12 @@ function Header() {
 		setHoverTitle(null);
 	}
 	// Code to navigate to the page of the hovered element
-	function navigation(title: string, content1: any, navigate: any) {
-		navigate(`/${title}/${content1}`);
+	function navigation(title: string, label: any, navigate: any) {
+		navigate(`/${title}/${label}`);
 	}
 
-	function navigation2(title: any, content2: any, navigate: any) {
-		navigate(`/${title}/${content2}`);
+	function navigation2(title: any, label: any, navigate: any) {
+		navigate(`/${title}/${label}`);
 	}
 
 	return (
@@ -38,11 +39,11 @@ function Header() {
 									className='modal-submenu-navbar-container'
 									onMouseEnter={() => openModalSubMenu(data.title)}
 									onMouseLeave={closeModalSubMenu}>
-									<span className='header-submenu-span' onClick={() => navigation(data.title, data.content1, navigate)}>
-										{data.content1}
+									<span className='header-submenu-span' onClick={() => navigation(data.title, data.subMenu[0].label, navigate)}>
+										{data.subMenu[0].label}
 									</span>
-									<span className='header-submenu-span' onClick={() => navigation(data.title, data.content2, navigate)}>
-										{data.content2}
+									<span className='header-submenu-span' onClick={() => navigation(data.title, data.subMenu[1].label, navigate)}>
+										{data.subMenu[1].label}
 									</span>
 								</div>
 							)}

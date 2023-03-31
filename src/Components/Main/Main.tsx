@@ -4,11 +4,12 @@ import Taipei from '../Taipei/Taipei';
 import datas from '../../datas/datas';
 import TaipeiNight from '../Taipei/TaipeiNight/TaipeiNight';
 import Home from '../Home/Home';
+import {Outlet} from 'react-router-dom';
 
 function Main() {
 	return (
 		<div className='main-container'>
-			<Home />
+			<Outlet />
 		</div>
 	);
 }

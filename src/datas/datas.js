@@ -1,17 +1,33 @@
 const datas = [
 	{
 		title: 'Taipei',
-		content1: 'Le Marché nocturne',
-		content2: 'Le Marché du poisson',
+		subMenu: [
+			{
+				label: 'Le Marché nocturne',
+			},
+			{
+				label: 'Le Marché du poisson',
+			},
+		],
 	},
 	{
 		title: 'La Cuisine',
-		content1: 'La soupe de nouille au boeuf - 牛肉麵',
-		content2: 'Le thé - 茶',
+		subMenu: [
+			{
+				label: 'La soupe de nouille au boeuf - 牛肉麵',
+			},
+			{
+				label: 'Le thé - 茶',
+			},
+		],
 	},
 	{
 		title: 'Info Visa',
-		content1: 'Information concernant les visas',
+		subMenu: [
+			{
+				label: 'Information concernant les visas',
+			},
+		],
 	},
 ];
 
