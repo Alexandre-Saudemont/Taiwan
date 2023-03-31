@@ -8,7 +8,7 @@
 .header-nav {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: flex-end;
 	width: 80%;
 	margin: auto;
 }
@@ -31,4 +31,9 @@
 	top: 7.1%;
 	left: 15%;
 	right: 15%;
+}
+
+.header-submenu-span:hover {
+	cursor: pointer;
+	color: aqua;
 }

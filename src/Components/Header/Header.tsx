@@ -1,96 +1,58 @@
 import React, {useEffect} from 'react';
-import {NavLink} from 'react-router-dom';
+import {NavLink, useNavigate} from 'react-router-dom';
 import './Header.scss';
-
+import datas from '../../datas/datas';
 function Header() {
 	// Code to trigger the modal to open or not using react useState
-	// const [modalTaipei, setModalTaipei] = React.useState(false);
-	// const [modalCuisine, setModalCuisine] = React.useState(false);
-	const [openModal, setOpenModal] = React.useState(null);
-
-	// interface Datas {
-	// 	title: string,
-	// 	content1: string,
-	// 	content2: string,
-	// }
-	const datas = [
-		{
-			title: 'Taipei',
-			content1: 'Le Marché nocturne',
-			content2: 'Le Marché du poisson',
-		},
-		{
-			title: 'La Cuisine',
-			content1: 'La soupe de nouille au boeuf - 牛肉麵',
-			content2: 'Le thé - 茶',
-		},
-	];
-	console.log('marché nuit', datas[0].content1, 'la soupe o choux', datas[1].content1);
-
-	// function openSubMenuTaipei() {
-	// 	modalCuisine && setModalCuisine(false);
-	// 	setModalTaipei(true);
-	// }
-	// function closeSubMenuTaipei() {
-	// 	setModalTaipei(false);
-	// }
-
-	// function openSubMenuCuisine() {
-	// 	modalTaipei && setModalTaipei(false);
-	// 	setModalCuisine(true);
-	// }
-	// function closeSubMenuCuisine() {
-	// 	setModalCuisine(false);
-	// }
+	const [hoverTitle, setHoverTitle] = React.useState(null);
+	const navigate = useNavigate();
 
 	function openModalSubMenu(title: any) {
-		setOpenModal(title);
+		setHoverTitle(title);
+	}
+	function closeModalSubMenu() {
+		setHoverTitle(null);
+	}
+	// Code to navigate to the page of the hovered element
+	function navigation(title: string, content1: any, navigate: any) {
+		navigate(`/${title}/${content1}`);
 	}
 
-	function closeModalSubMenu() {
-		setOpenModal(null);
+	function navigation2(title: any, content2: any, navigate: any) {
+		navigate(`/${title}/${content2}`);
 	}
-	// Style for the Modal, if I only code it in CSS, the modal doesn't keep the style. That's the way I found to keep it styled
-	// const modalStyle: React.CSSProperties = {
-	// 	position: 'fixed',
-	// 	left: 0,
-	// 	backgroundColor: '#fff',
-	// 	zIndex: 1,
-	// 	width: '80%',
-	// };
-	useEffect(() => {}, []);
 
 	return (
 		<div className='header-container'>
 			<nav className='header-nav'>
 				<ul className='header-nav-title'>
+					{/* We map into our data, this way we can have dynamic content. If we want more title or more subMenu, we can just add them in our array of object "datas" */}
 					{datas.map((data, index) => (
+						// In react every generated element must have a key, so we add it to the div
 						<div key={index}>
 							<li onMouseEnter={() => openModalSubMenu(data.title)}>{data.title}</li>
-							{openModal === data.title && (
+							{/* we stock the title of the hovered element in the state "hoverTitle" so when we pass the mouse over the element, 
+							we can compare the title of the hovered element with the title of the element in the state "hoverTitle" and if they are the same, we display the modal */}
+							{hoverTitle === data.title && (
 								<div
 									className='modal-submenu-navbar-container'
 									onMouseEnter={() => openModalSubMenu(data.title)}
 									onMouseLeave={closeModalSubMenu}>
-									<span>{data.content1}</span>
-									<span>{data.content2}</span>
+									<span className='header-submenu-span' onClick={() => navigation(data.title, data.content1, navigate)}>
+										{data.content1}
+									</span>
+									<span className='header-submenu-span' onClick={() => navigation(data.title, data.content2, navigate)}>
+										{data.content2}
+									</span>
 								</div>
 							)}
 						</div>
 					))}
 				</ul>
 
-				{/* <NavLink className='header-nav' to='/inscription'>
+				<NavLink className='header-nav' to='/inscription'>
 					Rejoignez-nous
-					<div className='inscription-container'>
-						<form action='submit' className='inscription-form'>
-							<label htmlFor='Email'>
-								Email
-								<input type='email' name='email' placeholder='VotreEmail@exemple.com' className='inscription-input' />
-							</label>
-						</form>
-					</div>
-				</NavLink> */}
+				</NavLink>
 			</nav>
 		</div>
 	);
