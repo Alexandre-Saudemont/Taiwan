@@ -1,14 +1,25 @@
 import React from 'react';
 import './TaipeiNight.scss';
-import nightmarket from '../../../asset/images/nightMarket1.jpg';
+import datas from '../../../datas/datasTaipeiNight/datasTaipeiNight';
+import images from '../../../datas/datasTaipeiNight/images';
+
 function TaipeiNight() {
+	console.log('image[]', images);
 	return (
 		<div className='taipeinight-container'>
-			<img className='taipeinight-img' src={nightmarket} alt='nightMarket' />
-			Shilin Night Market 士林夜市 Marché de nuit le plus grand de Taipei et prisé des touristes, il vous faudra plus d’une visite pour
-			l’explorer en entier, entre marques internationales et locales, petits stands de street food, restauration souterraine et autres desserts
-			à la glace pilée. Le Shilin Night Market est situé entre les deux stations de Shilin et Jiantan sur la ligne 2 du métro (Tamsui-Xinyi
-			Line).
+			{images.map((image: any, index: any) => (
+				<React.Fragment key={index}>
+					<img className='taipeinight-img' src={image.src} alt='nightMarket' key={image.id} />
+				</React.Fragment>
+			))}
+			{datas.map((data: any, index: any) => (
+				<React.Fragment key={index}>
+					<div className='taipeinight-article-container'>
+						<h1 className='taipeinight-title'>{data.title}</h1>
+						<article className='taipeinight-text'>{data.text}</article>
+					</div>
+				</React.Fragment>
+			))}
 		</div>
 	);
 }

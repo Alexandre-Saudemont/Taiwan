@@ -1,9 +1,32 @@
+.taipeinight-container {
+	align-items: center;
+	height: 100vh;
+	background-color: #000;
+	color: #fff;
+}
+
 .taipeinight-img {
-	height: 86vh;
-	max-width: 40%;
+	max-width: 35%;
 	object-fit: contain;
 	-webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-	animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	padding: 5%;
+}
+
+.taipeinight-article-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.taipeinight-title {
+	font-size: 1.5rem;
+	color: aqua;
+}
+.taipeinight-text {
+	display: flex;
+	width: 50%;
 }
 
 /* ----------------------------------------------
@@ -37,6 +60,6 @@
 	100% {
 		// here the traslateX value define where the element end
 		-webkit-transform: translateX(-50px);
-		transform: translateX(10px);
+		transform: translateX(0%);
 	}
 }

@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {NavLink, useNavigate} from 'react-router-dom';
 import './Header.scss';
-import datas from '../../datas/datas';
+import datas from '../../datas/datasHeader/datasHeader';
 
 function Header() {
 	// Code to trigger the modal to open or not using react useState
@@ -23,6 +23,7 @@ function Header() {
 		<div className='header-container'>
 			<nav className='header-nav'>
 				<ul className='header-nav-title'>
+					<NavLink to='/'>Home</NavLink>
 					{/* We map into our data, this way we can have dynamic content. If we want more title or more subMenu, we can just add them in our array of object "datas" */}
 					{datas.map((data, index) => (
 						// In react every generated element must have a key, so we add it to React Fragment

@@ -1,9 +1,9 @@
-import {createBrowserRouter, RouteObject} from 'react-router-dom';
+import {createBrowserRouter} from 'react-router-dom';
 import App from '../App';
 import Inscription from '../Components/Inscription/Inscription';
 import Cuisine from '../Components/Cuisine/Cuisine';
 // we import the data in order to have a dynamic direction bsed on the title of the element and the content
-import datas from '../datas/datas';
+import datas from '../datas/datasHeader/datasHeader';
 import TaipeiNight from '../Components/Taipei/TaipeiNight/TaipeiNight';
 import TaipeiFish from '../Components/Taipei/TaipeiFish/TaipeiFish';
 
