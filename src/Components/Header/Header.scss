@@ -16,6 +16,7 @@
 .header-nav-title {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	width: 100%;
 }
 // Submenu that open when you mouse over the nav
@@ -31,6 +32,7 @@
 	top: 7.1%;
 	left: 15%;
 	right: 15%;
+	align-items: center;
 }
 
 .header-submenu-span:hover {

@@ -21,3 +21,4 @@ I didn't used any Back because I wanted to learn Firebase.
 -React  
 -Firebase  
 -SCSS
+-React Bootstrap
