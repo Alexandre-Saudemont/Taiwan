@@ -15,6 +15,10 @@ const images = [
 		id: 4,
 		src: '/images/nightMarket/nightMarket4.jpg',
 	},
+	{
+		id: 5,
+		src: '/images/nightMarket/nightMarket5.jpg',
+	},
 ];
 
 export default images;

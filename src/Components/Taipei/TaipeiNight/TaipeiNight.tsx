@@ -8,9 +8,17 @@ function TaipeiNight() {
 	console.log('image[]', images);
 	return (
 		<div className='taipeinight-container'>
-			<Carousel pause='hover'>
+			{datas.map((data: any, index: any) => (
+				<React.Fragment key={index}>
+					<h1 className='taipeinight-title'>{data.title}</h1>
+					<div className='taipeinight-article-container'>
+						<article className='taipeinight-text'>{data.text}</article>
+					</div>
+				</React.Fragment>
+			))}
+			<Carousel pause='hover' indicators={false} variant='dark'>
 				{images.map((image: any, index: any) => (
-					<Carousel.Item interval={2000} key={index}>
+					<Carousel.Item interval={7000} key={index}>
 						<img className='taipeinight-img' src={image.src} alt='nightMarket' key={image.id} />
 					</Carousel.Item>
 				))}{' '}
@@ -18,8 +26,7 @@ function TaipeiNight() {
 			{datas.map((data: any, index: any) => (
 				<React.Fragment key={index}>
 					<div className='taipeinight-article-container'>
-						<h1 className='taipeinight-title'>{data.title}</h1>
-						<article className='taipeinight-text'>{data.text}</article>
+						<article className='taipeinight-text'>{data.text2}</article>
 					</div>
 				</React.Fragment>
 			))}
