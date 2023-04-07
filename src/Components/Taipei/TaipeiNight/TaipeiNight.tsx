@@ -5,7 +5,6 @@ import images from '../../../datas/datasTaipeiNight/images';
 import Carousel from 'react-bootstrap/Carousel';
 
 function TaipeiNight() {
-	console.log('image[]', images);
 	return (
 		<div className='taipeinight-container'>
 			{datas.map((data: any, index: any) => (
@@ -21,7 +20,7 @@ function TaipeiNight() {
 					<Carousel.Item interval={7000} key={index}>
 						<img className='taipeinight-img' src={image.src} alt='nightMarket' key={image.id} />
 					</Carousel.Item>
-				))}{' '}
+				))}
 			</Carousel>
 			{datas.map((data: any, index: any) => (
 				<React.Fragment key={index}>

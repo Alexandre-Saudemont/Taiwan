@@ -1,0 +1,32 @@
+.taipeifish-container {
+	padding: 5rem;
+	width: 80%;
+	margin: auto;
+}
+
+.taipeifish-img {
+	max-width: 45%;
+	object-fit: contain;
+	-webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.2, 1) both;
+	animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.2, 1) both;
+	padding-right: 3%;
+	padding-left: 2%;
+	padding: 3%;
+}
+
+.taipeifish-article-container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.taipeifish-title {
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.taipeifish-text {
+	text-align: left;
+}
