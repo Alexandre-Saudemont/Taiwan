@@ -1,12 +1,12 @@
 .taipeinight-container {
 	align-items: center;
-
-	padding: 5rem;
-	width: auto;
+	padding: 7rem;
+	width: 70%;
+	margin: auto;
 }
 
 .taipeinight-img {
-	max-width: 45%;
+	max-width: 60%;
 	object-fit: contain;
 	-webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.2, 1) both;
 	animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.2, 1) both;
@@ -23,13 +23,14 @@
 }
 
 .taipeinight-title {
-	font-size: 1.5rem;
-
+	font-size: 3rem;
 	display: flex;
 	justify-content: flex-start;
 }
 .taipeinight-text {
+	margin-top: 5%;
 	text-align: left;
+	font-size: 1.5rem;
 }
 
 /* ----------------------------------------------

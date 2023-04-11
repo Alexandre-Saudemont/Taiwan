@@ -30,5 +30,5 @@ const datas = [
 		],
 	},
 ];
-
+console.log('data', datas);
 export default datas;
