@@ -11,7 +11,7 @@ const datas = [
     des fruits de mer prêts à manger, de nombreux types de ragoûts, des plats et des grillades. 
     Visitez simplement le marché aux poissons de Taipei et vous pourrez déguster un régal de fruits de mer riche et agréable.`,
 
-		title2: `Bento à emporter / Gourmet cuisiné`,
+		title1: `Bento à emporter / Gourmet cuisiné`,
 		text2: `Bien qu'il existe de nombreuses stations de restauration ici, vous pouvez également acheter des repas préemballés et les manger à l'extérieur. 
     Frais au possible, la plupart étant également à un prix raisonnable. Ils offrent de nombreuses options de plats cuisinés.
     Amaebi ou crevettes douces par exemple, chaque boîte contient environ dix pièces et est vendue pour seulement 240 NTD. (environ 7€)`,

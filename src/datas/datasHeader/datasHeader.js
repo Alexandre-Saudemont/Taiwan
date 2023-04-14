@@ -14,7 +14,7 @@ const datas = [
 		title: 'La Cuisine',
 		subMenu: [
 			{
-				label: 'La soupe de nouille au boeuf - 牛肉麵',
+				label: 'La cuisine Taiwanaise - 台灣美食',
 			},
 			{
 				label: 'Le thé - 茶',

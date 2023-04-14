@@ -1,7 +1,7 @@
 import React from 'react';
 import './TaipeiFish.scss';
-import datas from '../../../datas/datasTaipeiFish/datasTaipeiFish';
-import images from '../../../datas/datasTaipeiFish/images';
+import datas from '../../../datas/datasTaipei/TaipeiFish/datasTaipeiFish';
+import images from '../../../datas/datasTaipei/TaipeiFish/images';
 import Carousel from 'react-bootstrap/Carousel';
 
 function TaipeiFish() {
@@ -13,7 +13,6 @@ function TaipeiFish() {
 					<div className='taipeifish-article-container'>
 						<article className='taipeifish-text'>{data.text}</article>
 					</div>
-
 					<Carousel pause='hover' indicators={false} variant='dark'>
 						{images.map((image: any) => (
 							<Carousel.Item interval={7000} key={image.id}>
@@ -21,7 +20,11 @@ function TaipeiFish() {
 							</Carousel.Item>
 						))}
 					</Carousel>
-
+				</React.Fragment>
+			))}
+			{datas.map((data: any, index: any) => (
+				<React.Fragment key={index}>
+					<h1 className='taipeifish-title'>{data.title1}</h1>
 					<div className='taipeifish-article-container'>
 						<article className='taipeifish-text'>{data.text2}</article>
 					</div>

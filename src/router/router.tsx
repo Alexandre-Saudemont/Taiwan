@@ -6,7 +6,6 @@ import Cuisine from '../Components/Cuisine/Cuisine';
 import datas from '../datas/datasHeader/datasHeader';
 import TaipeiNight from '../Components/Taipei/TaipeiNight/TaipeiNight';
 import TaipeiFish from '../Components/Taipei/TaipeiFish/TaipeiFish';
-import SoupeBoeuf from '../Components/Cuisine/SoupeBoeuf/SoupeBoeuf';
 
 const router = createBrowserRouter([
 	{
@@ -23,7 +22,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: `${datas[1].title}/${datas[1].subMenu[0].label}`,
-				element: <SoupeBoeuf />,
+				element: <Cuisine />,
 			},
 		],
 	},

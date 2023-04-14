@@ -1,7 +1,7 @@
 import React from 'react';
 import './TaipeiNight.scss';
-import datas from '../../../datas/datasTaipeiNight/datasTaipeiNight';
-import images from '../../../datas/datasTaipeiNight/images';
+import datas from '../../../datas/datasTaipei/TaipeiNight/datasTaipeiNight';
+import images from '../../../datas/datasTaipei/TaipeiNight/images';
 import Carousel from 'react-bootstrap/Carousel';
 
 function TaipeiNight() {
