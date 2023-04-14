@@ -5,11 +5,7 @@ export const datas = {
 		text: `La soupe de nouilles au bœuf et aux nouilles, ou niu rou mian , est considérée comme étant un plat emblématique de Taïwan. 
     C’est un plat récent apparu au XX° s qui a été introduit à Taïwan par des anciens combattants sichuanais du Kuomintang qui se réfugièrent sur l’île pendant la guerre civile chinoise.
     Il existe en Asie de nombreuses versions de soupes au bœuf et aux nouilles. 
-    Ce plat aurait été conçu la première fois par l’ethnie Hui au cours de la dynastie Tang et fut connue sous le nom de soupe de nouilles au bœuf de Lanzhou.`,
-		text1: `À Taïwan, les vendeurs de soupes de nouilles au bœuf peuvent également proposer des accompagnements facultatifs, 
-
-    souvent froids, tels que du tofu séché braisé, des algues ou des intestins de porc. 
-    Les nouilles au bœuf sont souvent accompagnées de suan cai (choucroute chinoise), d'oignons verts et parfois d'autres légumes7.
+    Ce plat aurait été conçu la première fois par l’ethnie Hui au cours de la dynastie Tang et fut connue sous le nom de soupe de nouilles au bœuf de Lanzhou.
     Le niu rou mian est une soupe souvent servie dans les marchés de nuit à Taïwan. C’est un plat street food très populaire à Taipei.`,
 	},
 	omelette: {
@@ -31,3 +27,5 @@ export const datas = {
     Elle a remporté de nombreux prix et distinctions gastronomiques, notamment une étoile Michelin pour plusieurs de ses restaurants dans le monde entier.`,
 	},
 };
+
+export default datas;

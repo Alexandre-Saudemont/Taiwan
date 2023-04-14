@@ -1,12 +1,13 @@
-import React from 'react';
 import './Cuisine.scss';
-import {dataSoupe, dataOmelette, dataDumpling} from '../../datas/datasCuisine/datasCuisine';
-import SoupeComponent from '../../datas/datasCuisine/SoupeComponent';
+import datas from '../../datas/datasCuisine/datasCuisine';
+import Dish from '../../datas/datasCuisine/Dish';
 
 function Cuisine() {
 	return (
 		<div className='cuisine-container'>
-			<SoupeComponent {...dataSoupe} />
+			<Dish dish={datas.soupe} />
+			<Dish dish={datas.omelette} />
+			<Dish dish={datas.dumpling} />
 		</div>
 	);
 }
