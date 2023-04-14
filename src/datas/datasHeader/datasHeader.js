@@ -3,10 +3,10 @@ const datas = [
 		title: 'Taipei',
 		subMenu: [
 			{
-				label: 'Le Marché nocturne',
+				label: 'Le Marché nocturne - 華西夜市',
 			},
 			{
-				label: 'Le Marché du poisson',
+				label: 'Le Marché du poisson - 台北魚市場',
 			},
 		],
 	},
@@ -30,5 +30,5 @@ const datas = [
 		],
 	},
 ];
-console.log('data', datas);
+
 export default datas;

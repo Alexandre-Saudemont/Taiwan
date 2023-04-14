@@ -9,7 +9,7 @@ interface Props {
 	};
 }
 
-const Dish = ({dish}: Props) => {
+const DishReverse = ({dish}: Props) => {
 	const {title, text, img} = dish;
 	return (
 		<>
@@ -17,11 +17,11 @@ const Dish = ({dish}: Props) => {
 				<h1 className='dish-title'>{title}</h1>
 			</React.Fragment>
 
-			<div className='dish-container'>
+			<div className='dish-container-reverse'>
 				<article className='dish-text'>{text}</article>
-				<img className='dish-img' src={img} alt='' />
+				<img className='dish-img-reverse' src={img} alt='' />
 			</div>
 		</>
 	);
 };
-export default Dish;
+export default DishReverse;

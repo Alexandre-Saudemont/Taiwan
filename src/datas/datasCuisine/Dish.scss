@@ -1,0 +1,40 @@
+.dish-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 5%;
+}
+.dish-container-reverse {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 5%;
+}
+.dish-title {
+	font-size: 3rem;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.dish-text {
+	margin: 5% 0 5% 0;
+	text-align: left;
+	font-size: 1.5rem;
+}
+
+.dish-img {
+	max-width: 50%;
+	object-fit: contain;
+	-webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.2, 1) both;
+	animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.2, 1) both;
+	padding: 5% 0 0 5%;
+}
+
+.dish-img-reverse {
+	max-width: 50%;
+	object-fit: contain;
+	-webkit-animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.2, 1) both;
+	animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.2, 1) both;
+	padding: 5% 5% 0 0;
+}
