@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.scss';
-import github from '/images/github.svg';
-import linkedin from './images/linkedin.svg';
+import github from '../../../src/asset/images/github.svg';
+import linkedin from '../../../src/asset/images/linkedin.svg';
 
 function Footer() {
 	return (
@@ -12,8 +12,8 @@ function Footer() {
 				</span>
 			</a>
 
-			<p>Design par Alexandre Saudemont. 🐔</p>
-			<p>Copyright© 2023 Alexandre Saudemont. All Rights Reserved.</p>
+			<p className='footer-text'>Design par Alexandre Saudemont. 🐔</p>
+			<p className='footer-text'>Copyright© 2023 Alexandre Saudemont. All Rights Reserved.</p>
 
 			<a href='https://www.linkedin.com/in/alexandre-saudemont-535481239/' target='_blank' rel='noreferrer'>
 				<span>
