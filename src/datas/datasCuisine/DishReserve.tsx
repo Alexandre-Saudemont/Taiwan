@@ -19,7 +19,7 @@ const DishReverse = ({dish}: Props) => {
 
 			<div className='dish-container-reverse'>
 				<article className='dish-text'>{text}</article>
-				<img className='dish-img-reverse fadeInUp' src={img} alt='' />
+				<img className='dish-img-reverse' src={img} alt='' />
 			</div>
 		</>
 	);

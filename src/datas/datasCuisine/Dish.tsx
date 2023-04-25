@@ -1,5 +1,6 @@
 import React from 'react';
 import './Dish.scss';
+
 // Creating a type for the props
 interface Props {
 	dish: {
@@ -9,6 +10,7 @@ interface Props {
 	};
 }
 
+// Creating a functional component, using the property of the props we created above
 const Dish = ({dish}: Props) => {
 	const {title, text, img} = dish;
 	return (

@@ -23,7 +23,9 @@ function Header() {
 		<div className='header-container'>
 			<nav className='header-nav'>
 				<ul className='header-nav-title'>
-					<NavLink to='/'>Home</NavLink>
+					<NavLink className='header-home' to='/'>
+						Home
+					</NavLink>
 					{/* We map into our data, this way we can have dynamic content. If we want more title or more subMenu, we can just add them in our array of object "datas" */}
 					{datas.map((data, index) => (
 						// In react every generated element must have a key, so we add it to React Fragment
@@ -52,10 +54,6 @@ function Header() {
 						</React.Fragment>
 					))}
 				</ul>
-
-				<NavLink className='header-nav' to='/inscription'>
-					Rejoignez-nous
-				</NavLink>
 			</nav>
 		</div>
 	);

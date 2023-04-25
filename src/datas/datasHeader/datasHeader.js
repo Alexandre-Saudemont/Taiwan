@@ -25,10 +25,10 @@ const datas = [
 		title: 'Info Visa',
 		subMenu: [
 			{
-				label: 'Information concernant les visas',
+				label: 'Information concernant les visas - 簽證信息',
 			},
 		],
 	},
 ];
-
+console.log(datas);
 export default datas;

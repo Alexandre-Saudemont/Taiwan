@@ -11,10 +11,7 @@ function Footer() {
 					<img src={github} alt='github icon' className='footer-github' />
 				</span>
 			</a>
-
 			<p className='footer-text'>Design par Alexandre Saudemont. 🐔</p>
-			<p className='footer-text'>Copyright© 2023 Alexandre Saudemont. All Rights Reserved.</p>
-
 			<a href='https://www.linkedin.com/in/alexandre-saudemont-535481239/' target='_blank' rel='noreferrer'>
 				<span>
 					<img src={linkedin} alt='linkedin icon' className='footer-linkedin' />

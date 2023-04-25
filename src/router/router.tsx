@@ -1,11 +1,12 @@
 import {createBrowserRouter} from 'react-router-dom';
 import App from '../App';
-import Inscription from '../Components/Inscription/Inscription';
-import Cuisine from '../Components/Cuisine/Cuisine';
-// we import the data in order to have a dynamic direction bsed on the title of the element and the content
+// we import the data in order to have a dynamic direction based on the title of the element and the content
 import datas from '../datas/datasHeader/datasHeader';
+import Cuisine from '../Components/Cuisine/Cuisine/Cuisine';
 import TaipeiNight from '../Components/Taipei/TaipeiNight/TaipeiNight';
 import TaipeiFish from '../Components/Taipei/TaipeiFish/TaipeiFish';
+import LeThe from '../Components/Cuisine/The/LeThe';
+import Visa from '../Components/Visa/Visa';
 
 const router = createBrowserRouter([
 	{
@@ -24,11 +25,15 @@ const router = createBrowserRouter([
 				path: `${datas[1].title}/${datas[1].subMenu[0].label}`,
 				element: <Cuisine />,
 			},
+			{
+				path: `${datas[1].title}/${datas[1].subMenu[1].label}`,
+				element: <LeThe />,
+			},
+			{
+				path: `${datas[2].title}/${datas[2].subMenu[0].label}`,
+				element: <Visa />,
+			},
 		],
-	},
-	{
-		path: '/inscription',
-		element: <Inscription />,
 	},
 ]);
 

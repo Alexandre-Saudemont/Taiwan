@@ -1,7 +1,7 @@
 import './Cuisine.scss';
-import datas from '../../datas/datasCuisine/datasCuisine';
-import Dish from '../../datas/datasCuisine/Dish';
-import DishReverse from '../../datas/datasCuisine/DishReserve';
+import datas from '../../../datas/datasCuisine/datasCuisine';
+import Dish from '../../../datas/datasCuisine/Dish';
+import DishReverse from '../../../datas/datasCuisine/DishReserve';
 
 function Cuisine() {
 	return (

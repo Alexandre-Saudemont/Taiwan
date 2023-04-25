@@ -21,6 +21,10 @@
 	width: 100%;
 }
 
+.header-home {
+	text-decoration: none;
+	color: black;
+}
 // Submenu that open when you mouse over the nav
 .modal-submenu-navbar-container {
 	box-shadow: 0px 1px 7px 1px lightgrey;
@@ -40,5 +44,5 @@
 
 .header-submenu-span:hover {
 	cursor: pointer;
-	color: aqua;
+	color: red;
 }
