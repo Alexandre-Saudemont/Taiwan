@@ -1,44 +1,128 @@
+// .home-container {
+// 	min-height: 86vh;
+// 	width: 100%;
+// 	display: flex;
+// 	flex-direction: column;
+// }
+
+// .home-img {
+// 	width: 100%;
+// }
+
+// .home-title {
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, -200%);
+// 	color: rgb(212, 91, 91);
+// 	font-size: 7rem;
+// 	text-shadow: 1px 1px 1px black;
+// 	opacity: 2;
+// 	width: 70%;
+// }
+
+// .home-text {
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, 20%);
+// 	font-size: 2.5rem;
+// 	text-shadow: 2px 2px 2px black;
+// 	color: lightgoldenrodyellow;
+// 	width: 70%;
+// }
+
+// .home-text1 {
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, 170%);
+// 	font-size: 2.5rem;
+// 	text-shadow: 2px 2px 2px black;
+// 	color: lightgoldenrodyellow;
+// 	width: 70%;
+// }
+
 .home-container {
-	min-height: 86vh;
+	min-height: auto; /* Ajustez la hauteur en fonction du contenu */
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	align-items: center; /* Centrer les éléments horizontalement */
 }
 
 .home-img {
 	width: 100%;
+	height: auto;
 }
+.text-container {
+	position: absolute;
 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 .home-title {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -200%);
+	position: static; /* Modifier la position en statique pour le flux normal du document */
 	color: rgb(212, 91, 91);
-	font-size: 7rem;
+	font-size: 4rem; /* Réduire la taille de la police */
 	text-shadow: 1px 1px 1px black;
-	opacity: 2;
-	width: 70%;
+	width: 100%; /* Utiliser la largeur complète du conteneur */
+	text-align: center; /* Centrer le texte horizontalement */
+	margin-top: 20px; /* Ajouter une marge supérieure pour l'espacement */
 }
 
-.home-text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, 20%);
-	font-size: 2.5rem;
-	text-shadow: 2px 2px 2px black;
-	color: lightgoldenrodyellow;
-	width: 70%;
-}
-
+.home-text,
 .home-text1 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, 170%);
-	font-size: 2.5rem;
+	position: static; /* Modifier la position en statique pour le flux normal du document */
+	font-size: 2rem; /* Réduire la taille de la police */
 	text-shadow: 2px 2px 2px black;
 	color: lightgoldenrodyellow;
-	width: 70%;
+	width: 100%; /* Utiliser la largeur complète du conteneur */
+	text-align: center; /* Centrer le texte horizontalement */
+	margin-top: 10px; /* Ajouter une marge supérieure pour l'espacement */
 }
+
+// Responsive design for mobile devices
+@media screen and (max-width: 390px) {
+	.home-img {
+		height: 86vh;
+	}
+
+	.text-container {
+		width: 70%;
+		padding-top: 25%;
+	}
+
+	.home-title {
+		font-size: 2.5rem;
+	}
+
+	.home-text,
+	.home-text1 {
+		font-size: 1rem;
+		padding: 10% 0 10% 0;
+	}
+}
+
+// @media screen and (max-width: 912px) {
+// 	.home-img {
+// 		height: 86vh;
+// 	}
+
+// 	.text-container {
+// 		width: 70%;
+// 		padding-top: 15%;
+// 	}
+
+// 	.home-title {
+// 		font-size: 4rem;
+// 	}
+
+// 	.home-text,
+// 	.home-text1 {
+// 		font-size: 2.3rem;
+// 		padding: 10% 0 10% 0;
+// 	}
+// }

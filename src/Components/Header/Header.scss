@@ -46,3 +46,9 @@
 	cursor: pointer;
 	color: red;
 }
+
+@media screen and (max-width: 390px) {
+	.header-nav {
+		width: 100%;
+	}
+}

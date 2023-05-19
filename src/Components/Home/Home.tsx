@@ -9,9 +9,11 @@ function Home() {
 			<img className='home-img' src={taiwanHome} alt='paysage-taiwan' />
 			{datas.map((data: any, index: any) => (
 				<React.Fragment key={index}>
-					<h1 className='home-title'>{data.title}</h1>
-					<article className='home-text'>{data.text}</article>
-					<article className='home-text1'>{data.text1}</article>
+					<div className='text-container'>
+						<h1 className='home-title'>{data.title}</h1>
+						<article className='home-text'>{data.text}</article>
+						<article className='home-text1'>{data.text1}</article>
+					</div>
 				</React.Fragment>
 			))}
 		</div>
