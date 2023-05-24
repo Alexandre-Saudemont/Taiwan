@@ -1,6 +1,6 @@
 const datas = [
 	{
-		title: 'Bienvenu à Taiwan !',
+		title: 'Bienvenue à Taiwan !',
 		text: `Taïwan, tout le monde connait ce nom et pourtant on ne sait pas toujours ce que c’est. Non Taïwan n’est pas une ville chinoise. 
     C’est un pays, une île d’à peu près la taille du Sri Lanka, au large des côtes chinoises. 
     Les européens, les japonais, les chinois, tout le monde a voulu posséder Taïwan ou au moins commercer avec.

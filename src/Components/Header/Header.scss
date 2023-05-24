@@ -27,7 +27,7 @@
 }
 // Submenu that open when you mouse over the nav
 .modal-submenu-navbar-container {
-	box-shadow: 0px 1px 7px 1px lightgrey;
+	box-shadow: 0px 1px 7px 1px grey;
 	background-color: white;
 	width: 70%;
 	height: 10%;
@@ -40,6 +40,7 @@
 	left: 15%;
 	right: 15%;
 	align-items: center;
+	z-index: 2;
 }
 
 .header-submenu-span:hover {
@@ -49,6 +50,16 @@
 
 @media screen and (max-width: 390px) {
 	.header-nav {
-		width: 100%;
+		width: 80%;
+	}
+
+	.header-container {
+		font-size: 1rem;
+	}
+
+	.modal-submenu-navbar-container {
+		width: 80%;
+		margin: auto;
+		left: 10%;
 	}
 }

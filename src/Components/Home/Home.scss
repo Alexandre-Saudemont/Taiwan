@@ -44,11 +44,11 @@
 // }
 
 .home-container {
-	min-height: auto; /* Ajustez la hauteur en fonction du contenu */
+	min-height: auto;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center; /* Centrer les éléments horizontalement */
+	align-items: center;
 }
 
 .home-img {
@@ -57,72 +57,72 @@
 }
 .text-container {
 	position: absolute;
-
+	padding-top: 10%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	width: 70%;
+	z-index: 1;
 }
 .home-title {
-	position: static; /* Modifier la position en statique pour le flux normal du document */
+	padding-bottom: 5%;
 	color: rgb(212, 91, 91);
-	font-size: 4rem; /* Réduire la taille de la police */
+	font-size: 5rem;
 	text-shadow: 1px 1px 1px black;
-	width: 100%; /* Utiliser la largeur complète du conteneur */
-	text-align: center; /* Centrer le texte horizontalement */
-	margin-top: 20px; /* Ajouter une marge supérieure pour l'espacement */
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
 }
 
 .home-text,
 .home-text1 {
-	position: static; /* Modifier la position en statique pour le flux normal du document */
-	font-size: 2rem; /* Réduire la taille de la police */
+	margin: 5% 0 5% 0;
+	font-size: 3rem; /* Réduire la taille de la police */
 	text-shadow: 2px 2px 2px black;
 	color: lightgoldenrodyellow;
 	width: 100%; /* Utiliser la largeur complète du conteneur */
 	text-align: center; /* Centrer le texte horizontalement */
-	margin-top: 10px; /* Ajouter une marge supérieure pour l'espacement */
+	margin-top: 10px;
 }
 
 // Responsive design for mobile devices
-@media screen and (max-width: 390px) {
-	.home-img {
-		height: 86vh;
-	}
-
-	.text-container {
-		width: 70%;
-		padding-top: 25%;
-	}
-
-	.home-title {
-		font-size: 2.5rem;
-	}
-
-	.home-text,
-	.home-text1 {
-		font-size: 1rem;
-		padding: 10% 0 10% 0;
-	}
-}
-
-// @media screen and (max-width: 912px) {
+// @media screen and (max-width: 390px) {
 // 	.home-img {
 // 		height: 86vh;
 // 	}
 
 // 	.text-container {
-// 		width: 70%;
-// 		padding-top: 15%;
+// 		width: 80%;
 // 	}
 
 // 	.home-title {
-// 		font-size: 4rem;
+// 		font-size: 2.4rem;
 // 	}
 
 // 	.home-text,
 // 	.home-text1 {
-// 		font-size: 2.3rem;
-// 		padding: 10% 0 10% 0;
+// 		font-size: 1.1rem;
+// 		padding: 7% 0 0 0;
 // 	}
 // }
+
+@media screen and (max-width: 1024px) {
+	.home-img {
+		height: 86vh;
+	}
+
+	.text-container {
+		width: 80%;
+	}
+
+	.home-title {
+		font-size: 2.2rem;
+	}
+
+	.home-text,
+	.home-text1 {
+		font-size: 1.2rem;
+		padding: 7% 0 -5% 0;
+	}
+}

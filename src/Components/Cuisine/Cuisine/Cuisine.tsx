@@ -1,14 +1,15 @@
 import './Cuisine.scss';
 import datas from '../../../datas/datasCuisine/datasCuisine';
-import Dish from '../../../datas/datasCuisine/Dish';
-import DishReverse from '../../../datas/datasCuisine/DishReserve';
+import Dish from '../../Dish/Dish';
+import DishReverse from '../../Dish/DishReserve';
 
 function Cuisine() {
+	const {soupe, omelette, dumpling} = datas;
 	return (
 		<div className='cuisine-container'>
-			<Dish dish={datas.soupe} />
-			<DishReverse dish={datas.omelette} />
-			<Dish dish={datas.dumpling} />
+			<Dish dish={soupe} />
+			<DishReverse dish={omelette} />
+			<Dish dish={dumpling} />
 		</div>
 	);
 }

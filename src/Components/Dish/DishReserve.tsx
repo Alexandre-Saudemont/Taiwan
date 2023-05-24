@@ -1,15 +1,8 @@
 import React from 'react';
 import './Dish.scss';
-// Creating a type for the props
-interface Props {
-	dish: {
-		title: string;
-		text: string;
-		img: any;
-	};
-}
+import DishProps from './dishInterface';
 
-const DishReverse = ({dish}: Props) => {
+const DishReverse = ({dish}: DishProps) => {
 	const {title, text, img} = dish;
 	return (
 		<>
