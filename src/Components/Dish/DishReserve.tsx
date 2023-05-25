@@ -1,5 +1,5 @@
 import React from 'react';
-import './Dish.scss';
+import './DishReverse.scss';
 import DishProps from './dishInterface';
 
 const DishReverse = ({dish}: DishProps) => {

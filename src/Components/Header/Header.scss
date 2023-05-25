@@ -63,3 +63,23 @@
 		left: 10%;
 	}
 }
+
+@media screen and (max-width: 1024px) {
+	.header-container {
+		height: 10vh;
+	}
+	.header-nav {
+		width: 90%;
+	}
+
+	.header-container {
+		font-size: 1.4rem;
+	}
+
+	.modal-submenu-navbar-container {
+		width: 80%;
+		margin: auto;
+		left: 10%;
+		font-size: 1.3rem;
+	}
+}
