@@ -15,7 +15,7 @@ function TaipeiFish() {
 					</div>
 					<Carousel pause='hover' indicators={false} variant='dark'>
 						{images.map((image: any) => (
-							<Carousel.Item interval={7000} key={image.id}>
+							<Carousel.Item interval={5000} key={image.id}>
 								<img className='taipeifish-img' src={image.src} alt='fistMarket' />
 							</Carousel.Item>
 						))}

@@ -14,9 +14,11 @@ function Header() {
 	function closeModalSubMenu() {
 		setHoverTitle(null);
 	}
+
 	// Code to navigate to the page of the hovered element
 	function navigation(title: string, label: any, navigate: any) {
 		navigate(`/${title}/${label}`);
+		closeModalSubMenu();
 	}
 
 	return (

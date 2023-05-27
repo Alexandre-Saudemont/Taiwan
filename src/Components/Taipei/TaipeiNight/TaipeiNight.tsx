@@ -17,7 +17,7 @@ function TaipeiNight() {
 			))}
 			<Carousel pause='hover' indicators={false} variant='dark'>
 				{images.map((image: any, index: any) => (
-					<Carousel.Item interval={7000} key={index}>
+					<Carousel.Item interval={5000} key={index}>
 						<img className='taipeinight-img' src={image.src} alt='nightMarket' key={image.id} />
 					</Carousel.Item>
 				))}

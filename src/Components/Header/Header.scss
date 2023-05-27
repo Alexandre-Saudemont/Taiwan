@@ -83,3 +83,19 @@
 		font-size: 1.3rem;
 	}
 }
+
+@media screen and (max-width: 390px) {
+	.header-nav {
+		width: 95%;
+	}
+	.header-container {
+		font-size: 1.2rem;
+	}
+
+	.modal-submenu-navbar-container {
+		width: 90%;
+		margin: auto;
+		left: 5%;
+		font-size: 1.1rem;
+	}
+}
