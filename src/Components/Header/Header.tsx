@@ -16,8 +16,8 @@ function Header() {
 	}
 
 	// Code to navigate to the page of the hovered element
-	function navigation(title: string, label: any, navigate: any) {
-		navigate(`/${title}/${label}`);
+	function navigation(href: any, navigate: any) {
+		navigate(`${href}`);
 		closeModalSubMenu();
 	}
 
@@ -46,7 +46,7 @@ function Header() {
 									{data?.subMenu?.map((subMenu, index) => (
 										<React.Fragment key={index}>
 											{/* Every span are created dynamically based on our data */}
-											<span className='header-submenu-span' onClick={() => navigation(data.title, subMenu.label, navigate)}>
+											<span className='header-submenu-span' onClick={() => navigation(subMenu.href, navigate)}>
 												{subMenu.label}
 											</span>
 										</React.Fragment>

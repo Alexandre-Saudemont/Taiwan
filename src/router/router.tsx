@@ -14,23 +14,23 @@ const router = createBrowserRouter([
 		element: <App />,
 		children: [
 			{
-				path: `${datas[0].title}/${datas[0]?.subMenu[0]?.label}`,
+				path: `/${datas[0].subMenu[0].href}`,
 				element: <TaipeiNight />,
 			},
 			{
-				path: `${datas[0].title}/${datas[0].subMenu[1].label}`,
+				path: `/${datas[0].subMenu[1].href}`,
 				element: <TaipeiFish />,
 			},
 			{
-				path: `${datas[1].title}/${datas[1].subMenu[0].label}`,
+				path: `/${datas[1].subMenu[0].href}`,
 				element: <Cuisine />,
 			},
 			{
-				path: `${datas[1].title}/${datas[1].subMenu[1].label}`,
+				path: `/${datas[1].subMenu[1].href}`,
 				element: <LeThe />,
 			},
 			{
-				path: `${datas[2].title}/${datas[2].subMenu[0].label}`,
+				path: `${datas[2].subMenu[0].href}`,
 				element: <Visa />,
 			},
 		],
