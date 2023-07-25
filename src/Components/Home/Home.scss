@@ -117,8 +117,8 @@
 	}
 
 	.home-title {
-		font-size: 2.7rem;
-		padding-top: 4rem;
+		font-size: 3rem;
+		padding-top: 1.5rem;
 	}
 
 	.home-text,
@@ -148,6 +148,25 @@
 // 		padding: 2% 0 -2% 0;
 // 	}
 // }
+
+@media screen and (max-width: 748px) {
+	.home-img {
+		height: 100vh;
+	}
+	.text-container {
+		width: 80%;
+	}
+
+	.home-title {
+		font-size: 2rem;
+		padding-top: 2rem;
+	}
+	.home-text,
+	.home-text1 {
+		font-size: 1.2rem;
+		padding: 7% 0 -5% 0;
+	}
+}
 
 @media screen and (max-width: 390px) {
 	.home-img {
