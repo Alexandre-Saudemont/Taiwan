@@ -15,6 +15,5 @@ I didn't used any Back because I wanted to learn Firebase.
 
 -TypeScript  
 -React  
-
 -SCSS
 
