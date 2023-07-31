@@ -13,12 +13,8 @@ I didn't used any Back because I wanted to learn Firebase.
 
 ## Stack used
 
----
-
-## Front :
-
 -TypeScript  
 -React  
--Firebase  
+
 -SCSS
--React Bootstrap
+
