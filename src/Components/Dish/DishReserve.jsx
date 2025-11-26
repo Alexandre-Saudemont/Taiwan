@@ -1,8 +1,6 @@
 import React from 'react';
-import './DishReverse.scss';
-import DishProps from './dishInterface';
 
-const DishReverse = ({dish}: DishProps) => {
+const DishReverse = ({dish}) => {
 	const {title, text, img} = dish;
 	return (
 		<>

@@ -1,10 +1,6 @@
 import React from 'react';
-import './Dish.scss';
-import DishProps from './dishInterface';
-// Creating a type for the props
 
-// Creating a functional component, using the property of the props we created above
-const Dish = ({dish}: DishProps) => {
+const Dish = ({dish}) => {
 	const {title, text, img} = dish;
 	return (
 		<>

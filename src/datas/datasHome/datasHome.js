@@ -1,14 +1,42 @@
-const datas = [
-	{
-		title: 'Bienvenue à Taiwan !',
-		text: `Taïwan, tout le monde connait ce nom et pourtant on ne sait pas toujours ce que c’est. Non Taïwan n’est pas une ville chinoise. 
-    C’est un pays, une île d’à peu près la taille du Sri Lanka, au large des côtes chinoises. 
-    Les européens, les japonais, les chinois, tout le monde a voulu posséder Taïwan ou au moins commercer avec.
-    Il est vrai que le climat tropical de l’île fait bien envie et la rend très riche. `,
-
-		text1: `Ici tout pousse, fruits et légumes et en plus la mer est généreuse.
-    La capitale, Taïpei se trouve tout au nord-ouest du pays. Une grande ville avec de grands buildings dont la tour Taïpei 101 de 508m, autrefois la plus haute du monde. 
-    Taipei c'est une vibrante métropole asiatique où se conjuguent modernité et traditions chinoises millénaires.`,
+const datas = {
+	hero: {
+		tagline: 'Découvrir Taïwan',
+		title: 'Un archipel vibrant entre futur et traditions séculaires',
+		description: `Taïwan est un laboratoire vivant où ruelles illuminées, marchés fumants et montagnes enveloppées de brume cohabitent en quelques kilomètres. 
+        Laissez-vous guider par ses senteurs d’encens, ses thés d’altitude et ses panoramas littoraux.`,
+		image: '/images/nightMarket/nightMarket3.jpg',
+		alt: 'Marché nocturne de Taipei',
+		cta: 'Explorer les thématiques',
 	},
-];
+	sections: [
+		{
+			slug: 'taipei-night',
+			kicker: 'Taipei',
+			title: 'La nuit électrique de Taipei',
+			text: `Des enseignes néon aux lanternes rouges, le marché nocturne devient le cœur battant de la capitale. 
+            Street food, jeux d’arcade et temples anciens composent un ballet urbain unique.`,
+			image: '/images/nightMarket/nightMarket5.jpg',
+			alt: 'Lanternes rougeoyantes du marché nocturne',
+		},
+		{
+			slug: 'taipei-fish',
+			kicker: 'Gastronomie',
+			title: 'Les marchés aux poissons à l’aube',
+			text: `Les halles grouillent de chefs, de pêcheurs et de curieux venus chercher le meilleur du Pacifique. 
+            C’est ici que l’on comprend la finesse et la fraîcheur de la cuisine taïwanaise.`,
+			image: '/images/fishMarket/fishMarket5.jpg',
+			alt: 'Marche aux poissons de Taipei',
+		},
+		{
+			slug: 'tea-mountains',
+			kicker: 'Nature',
+			title: 'Dans les jardins de thé perché',
+			text: `Les montagnes s’ouvrent sur des terrasses infinies d’oolong. 
+            Les maîtres du thé partagent leurs récoltes et prolongent des rituels vieux de plusieurs siècles.`,
+			image: '/images/tea/tea_garden.jpeg',
+			alt: 'Plantation de thé taïwanaise',
+		},
+	],
+};
+
 export default datas;

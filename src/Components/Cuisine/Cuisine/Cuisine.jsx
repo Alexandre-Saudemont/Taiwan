@@ -1,4 +1,3 @@
-import './Cuisine.scss';
 import datas from '../../../datas/datasCuisine/datasCuisine';
 import Dish from '../../Dish/Dish';
 import DishReverse from '../../Dish/DishReserve';

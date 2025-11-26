@@ -1,5 +1,4 @@
 import React from 'react';
-import './LeThe.scss';
 import datas from '../../../datas/datasThe/datasThe';
 
 function LeThe() {
