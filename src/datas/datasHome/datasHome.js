@@ -4,7 +4,7 @@ const datas = {
 		title: 'Un archipel vibrant entre futur et traditions séculaires',
 		description: `Taïwan est un laboratoire vivant où ruelles illuminées, marchés fumants et montagnes enveloppées de brume cohabitent en quelques kilomètres. 
         Laissez-vous guider par ses senteurs d’encens, ses thés d’altitude et ses panoramas littoraux.`,
-		image: '/images/nightMarket/nightMarket3.jpg',
+		image: '/images/taiwanHome1.jpg',
 		alt: 'Marché nocturne de Taipei',
 		cta: 'Explorer les thématiques',
 	},

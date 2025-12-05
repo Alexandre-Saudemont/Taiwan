@@ -39,14 +39,18 @@ function Header() {
 								key={data.title}
 								className='header-nav-item'
 								onMouseEnter={() => openDropdown(data.title)}
-								onMouseLeave={closeDropdown}
 								onFocus={() => openDropdown(data.title)}
 								onBlur={handleBlur}>
 								<button type='button' className='header-nav-trigger' aria-expanded={hoverTitle === data.title} aria-haspopup='true'>
 									{data.title}
 								</button>
 								{hoverTitle === data.title && (
-									<div className='header-dropdown'>
+									<div
+										className='header-dropdown'
+										onMouseEnter={() => openDropdown(data.title)}
+										onMouseLeave={closeDropdown}
+										onFocus={() => openDropdown(data.title)}
+										onBlur={handleBlur}>
 										{data?.subMenu?.map((subMenu) => (
 											<button
 												key={subMenu.href}
