@@ -13,6 +13,9 @@
 /out
 /build
 /.vercel
+/*.zip
+/*.rar
+
 
 # misc
 .DS_Store
