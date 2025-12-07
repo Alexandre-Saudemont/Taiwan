@@ -2,7 +2,7 @@
 	width: 100%;
 	background: var(--surface);
 	border-top: 1px solid rgba(15, 23, 42, 0.08);
-	margin-top: 6rem;
+
 	padding: 4rem 0 2.5rem;
 }
 
@@ -169,7 +169,6 @@
 @media screen and (max-width: 768px) {
 	.footer {
 		padding: 3rem 0 2rem;
-		margin-top: 4rem;
 	}
 
 	.footer-content {

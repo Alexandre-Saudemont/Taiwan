@@ -4,13 +4,18 @@ function Visa() {
 	return (
 		<div className='visa'>
 			<section className='visa-hero'>
-				<div className='visa-hero-content'>
-					<p className='visa-kicker'>Formalités</p>
-					<h1 className='visa-title'>Visa et formalités</h1>
-					<p className='visa-intro'>
-						Informations essentielles pour préparer votre voyage à Taïwan. Découvrez les conditions d'entrée et les formalités nécessaires
-						pour les ressortissants français.
-					</p>
+				<div className='visa-hero-inner'>
+					<div className='visa-hero-media'>
+						<img src='/images/passport.jpg' alt='Passeport français' className='visa-hero-img' />
+					</div>
+					<div className='visa-hero-content'>
+						<p className='visa-kicker'>Formalités</p>
+						<h1 className='visa-title'>Visa et formalités</h1>
+						<p className='visa-intro'>
+							Informations essentielles pour préparer votre voyage à Taïwan. Découvrez les conditions d'entrée et les formalités nécessaires
+							pour les ressortissants français.
+						</p>
+					</div>
 				</div>
 			</section>
 
@@ -34,9 +39,6 @@ function Visa() {
 							</p>
 						</article>
 					</div>
-				</div>
-				<div className='visa-content-media'>
-					<img src='/images/passport.jpg' className='visa-content-img' alt='Passeport français' />
 				</div>
 			</section>
 		</div>

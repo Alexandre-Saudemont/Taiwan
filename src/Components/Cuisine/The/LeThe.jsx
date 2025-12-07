@@ -8,8 +8,6 @@ function LeThe() {
 			alt: 'Thé Oolong taïwanais',
 			kicker: 'Grands Crus',
 			title: 'Les Oolong de Taïwan',
-			text: `L'île de Taïwan est réputée pour ses Oolong de grande qualité. On y trouve aussi bien des Oolong faiblement oxydés comme le Bao Zhong, mais aussi des thés d'oxydation intermédiaire et roulés en perles comme le Ding Dong et des thés d'oxydation forte comme le Butterfly of Taïwan.`,
-			text2: `On trouve également quelques Grands Crus exceptionnels venus des hautes montagnes (Gao Shan Cha) comme le Shan Li Xi Gao Shan Cha, un Grand Cru aux notes à la fois florales et gourmandes. Enfin, à Taïwan, on trouve également de très beaux thés noirs capables de rivaliser avec les plus beaux Grands Crus de Chine continentale. Un exemple : le Mi Xiang Hong Cha, un Grand Cru d'une belle complexité qui offre un bouquet de notes florales et miellées.`,
 		},
 	];
 
@@ -41,10 +39,10 @@ function LeThe() {
 								</div>
 
 								<div className='le-the-section-content'>
-									{section.kicker && <p className='le-the-section-kicker'>{section.kicker}</p>}
-									{section.title && <h2 className='le-the-section-title'>{section.title}</h2>}
-									<p className='le-the-section-text'>{section.text}</p>
-									{section.text2 && <p className='le-the-section-text'>{section.text2}</p>}
+									<p className='le-the-section-kicker'>Grands Crus</p>
+									<h2 className='le-the-section-title'>Les Oolong de Taïwan</h2>
+									<p className='le-the-section-text'>{datas.text1}</p>
+									<p className='le-the-section-text'>{datas.text2}</p>
 								</div>
 							</div>
 						</article>

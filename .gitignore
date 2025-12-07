@@ -14,7 +14,7 @@
 /build
 /.vercel
 /*.zip
-/*.rar
+/ *.rar
 
 
 # misc

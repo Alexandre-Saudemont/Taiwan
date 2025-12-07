@@ -9,15 +9,17 @@
 
 .taipei-fish-hero {
 	width: 100%;
-	background: linear-gradient(135deg, rgba(15, 23, 42, 0.03), rgba(233, 75, 60, 0.05));
-	padding: 4rem 0;
-	margin-top: 2rem;
+	padding-top: 2rem;
 }
 
 .taipei-fish-hero-content {
 	width: min(900px, calc(100% - 2rem));
 	margin: 0 auto;
 	text-align: center;
+	background: var(--surface);
+	border-radius: 34px;
+	box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+	padding: clamp(1.75rem, 4vw, 3rem);
 }
 
 .taipei-fish-kicker {
@@ -150,13 +152,15 @@
 
 .taipei-fish-content {
 	width: 100%;
-	background: var(--surface);
-	padding: 4rem 0;
+	padding-bottom: 3rem;
 }
-
 .taipei-fish-content-inner {
 	width: min(900px, calc(100% - 2rem));
 	margin: 0 auto;
+	background: var(--surface);
+	border-radius: 34px;
+	box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+	padding: clamp(1.75rem, 4vw, 3rem);
 }
 
 .taipei-fish-subtitle {
@@ -178,10 +182,6 @@
 @media screen and (max-width: 768px) {
 	.taipei-fish {
 		gap: 3rem;
-	}
-
-	.taipei-fish-hero {
-		padding: 3rem 0;
 	}
 
 	.taipei-fish-carousel-btn {
@@ -207,10 +207,6 @@
 }
 
 @media screen and (max-width: 480px) {
-	.taipei-fish-hero {
-		padding: 2rem 0;
-	}
-
 	.taipei-fish-carousel {
 		border-radius: 24px;
 	}

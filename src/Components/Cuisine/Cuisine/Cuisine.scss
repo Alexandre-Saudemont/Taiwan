@@ -4,20 +4,22 @@
 	flex-direction: column;
 	gap: 4rem;
 	align-items: center;
-	padding-bottom: 2rem;
+	padding-bottom: 5rem;
+	padding-top: 2rem;
 }
 
 .cuisine-hero {
 	width: 100%;
-	background: linear-gradient(135deg, rgba(15, 23, 42, 0.03), rgba(233, 75, 60, 0.05));
-	padding: 4rem 0;
-	margin-top: 2rem;
 }
 
 .cuisine-hero-content {
 	width: min(900px, calc(100% - 2rem));
 	margin: 0 auto;
 	text-align: center;
+	background: var(--surface);
+	border-radius: 34px;
+	box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+	padding: clamp(1.75rem, 4vw, 3rem);
 }
 
 .cuisine-kicker {
@@ -51,13 +53,13 @@
 	width: min(1200px, calc(100% - 2rem));
 	display: flex;
 	flex-direction: column;
-	gap: 2.5rem;
+	gap: 4rem;
 }
 
 .cuisine-dish {
 	width: 100%;
 	border-radius: 34px;
-	background: var(--surface);
+	background: transparent;
 	box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
 	overflow: hidden;
 }
@@ -146,17 +148,7 @@
 		gap: 3rem;
 	}
 
-	.cuisine-hero {
-		padding: 3rem 0;
-	}
-
 	.cuisine-dishes {
 		gap: 2rem;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.cuisine-hero {
-		padding: 2rem 0;
 	}
 }
