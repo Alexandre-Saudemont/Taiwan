@@ -127,14 +127,36 @@
 	.header-floating {
 		width: calc(100% - 1.5rem);
 		padding: 1rem 1.25rem;
+		align-items: center;
+		overflow: visible;
 	}
 
 	.header-nav-list {
 		gap: 0.1rem;
+		position: relative;
 	}
 
 	.header-nav-trigger {
 		font-size: 0.9rem;
 		padding: 0.4rem 0.8rem;
+	}
+
+	.header-dropdown {
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: calc(100vw - 3rem);
+		width: max-content;
+		min-width: 260px;
+	}
+
+	.header-nav-item:first-child .header-dropdown {
+		left: 0;
+		transform: none;
+	}
+
+	.header-nav-item:last-child .header-dropdown {
+		left: auto;
+		right: 0;
+		transform: none;
 	}
 }

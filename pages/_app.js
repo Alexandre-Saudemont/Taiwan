@@ -9,6 +9,8 @@ import '../src/Components/Dish/Dish.scss';
 import '../src/Components/Dish/DishReverse.scss';
 import '../src/Components/Taipei/TaipeiNight/TaipeiNight.scss';
 import '../src/Components/Taipei/TaipeiFish/TaipeiFish.scss';
+import '../src/Components/Taipei/ElephantMountain/ElephantMountain.scss';
+import '../src/Components/Taipei/Jiufen/Jiufen.scss';
 
 import Header from '../src/Components/Header/Header';
 import Footer from '../src/Components/Footer/Footer';

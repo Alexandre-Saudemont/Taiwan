@@ -53,12 +53,15 @@ function Footer() {
 
 				<div className='footer-section footer-section-credits'>
 					<p className='footer-credit'>
-						Design & développement par <strong>Alexandre Saudemont</strong>
+						Design & développement par <strong>As-WebDev</strong>
 					</p>
 					<a href='https://as-webdev.com' target='_blank' rel='noreferrer noopener' className='footer-portfolio-link'>
 						Voir mon portfolio →
 					</a>
 				</div>
+			</div>
+			<div className='footer-copyright'>
+				<p className='footer-copyright-text'>© {new Date().getFullYear()} As-WebDev. Tous droits réservés.</p>
 			</div>
 		</footer>
 	);

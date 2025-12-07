@@ -48,22 +48,37 @@
 }
 
 .cuisine-dishes {
-	width: 100%;
+	width: min(1200px, calc(100% - 2rem));
 	display: flex;
 	flex-direction: column;
-	gap: 4rem;
+	gap: 2.5rem;
 }
 
 .cuisine-dish {
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: 0;
+	border-radius: 34px;
+	background: var(--surface);
+	box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+	overflow: hidden;
+}
+
+.cuisine-dish-inner {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	align-items: stretch;
+	min-height: clamp(360px, 45vw, 520px);
+}
+
+.cuisine-dish.is-reversed .cuisine-dish-inner {
+	direction: rtl;
+}
+
+.cuisine-dish.is-reversed .cuisine-dish-inner > * {
+	direction: ltr;
 }
 
 .cuisine-dish-media {
-	width: 100%;
-	height: clamp(400px, 50vw, 600px);
+	position: relative;
 	overflow: hidden;
 }
 
@@ -72,7 +87,7 @@
 	height: 100%;
 	object-fit: cover;
 	display: block;
-	transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform 0.6s ease;
 }
 
 .cuisine-dish:hover .cuisine-dish-img {
@@ -80,19 +95,16 @@
 }
 
 .cuisine-dish-content {
-	width: min(900px, calc(100% - 2rem));
-	margin: -4rem auto 0;
-	padding: clamp(2rem, 4vw, 3.5rem);
-	border-radius: 32px;
-	background: var(--surface);
-	box-shadow: 0 30px 70px rgba(15, 23, 42, 0.12);
-	position: relative;
-	z-index: 1;
+	padding: clamp(1.75rem, 4vw, 3rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.65rem;
 }
 
 .cuisine-dish-title {
-	margin: 0 0 1.25rem;
-	font-size: clamp(1.75rem, 3vw, 2.25rem);
+	margin: 0;
+	font-size: clamp(1.8rem, 3vw, 2.6rem);
 	font-weight: 700;
 	color: var(--text-primary);
 	line-height: 1.2;
@@ -100,18 +112,33 @@
 
 .cuisine-dish-text {
 	margin: 0;
-	font-size: 1.05rem;
+	font-size: 1.02rem;
 	line-height: 1.8;
 	color: var(--text-muted);
 }
 
-.cuisine-dish-reverse {
-	flex-direction: column-reverse;
-}
+@media screen and (max-width: 960px) {
+	.cuisine-dish-inner {
+		grid-template-columns: 1fr;
+		min-height: auto;
+	}
 
-.cuisine-dish-reverse .cuisine-dish-content {
-	margin-top: 0;
-	margin-bottom: -4rem;
+	.cuisine-dish-media {
+		height: clamp(280px, 70vw, 420px);
+		order: 1;
+	}
+
+	.cuisine-dish-content {
+		order: 2;
+	}
+
+	.cuisine-dish.is-reversed .cuisine-dish-media {
+		order: 1;
+	}
+
+	.cuisine-dish.is-reversed .cuisine-dish-content {
+		order: 2;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -124,40 +151,12 @@
 	}
 
 	.cuisine-dishes {
-		gap: 3rem;
-	}
-
-	.cuisine-dish-media {
-		height: clamp(300px, 60vw, 500px);
-	}
-
-	.cuisine-dish-content {
-		margin-top: -2.5rem;
-		border-radius: 24px;
-		padding: 2rem 1.5rem;
-	}
-
-	.cuisine-dish-reverse .cuisine-dish-content {
-		margin-bottom: -2.5rem;
+		gap: 2rem;
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.cuisine-hero {
 		padding: 2rem 0;
-	}
-
-	.cuisine-dish-media {
-		height: clamp(250px, 70vw, 400px);
-	}
-
-	.cuisine-dish-content {
-		margin-top: -1.5rem;
-		border-radius: 20px;
-		padding: 1.5rem 1.25rem;
-	}
-
-	.cuisine-dish-reverse .cuisine-dish-content {
-		margin-bottom: -1.5rem;
 	}
 }

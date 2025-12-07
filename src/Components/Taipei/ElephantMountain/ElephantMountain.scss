@@ -1,0 +1,232 @@
+.elephant-mountain {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	align-items: center;
+	padding-bottom: 2rem;
+}
+
+.elephant-mountain-hero {
+	width: 100%;
+	background: linear-gradient(135deg, rgba(15, 23, 42, 0.03), rgba(233, 75, 60, 0.05));
+	padding: 4rem 0;
+	margin-top: 2rem;
+}
+
+.elephant-mountain-hero-content {
+	width: min(900px, calc(100% - 2rem));
+	margin: 0 auto;
+	text-align: center;
+}
+
+.elephant-mountain-kicker {
+	margin: 0 0 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3rem;
+	font-size: 0.8rem;
+	color: var(--accent);
+	font-weight: 600;
+}
+
+.elephant-mountain-title {
+	margin: 0 0 1.5rem;
+	font-size: clamp(2rem, 4vw, 3rem);
+	font-weight: 700;
+	color: var(--text-primary);
+	line-height: 1.2;
+}
+
+.elephant-mountain-intro {
+	margin: 0;
+	font-size: 1.1rem;
+	line-height: 1.8;
+	color: var(--text-muted);
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.elephant-mountain-gallery {
+	width: min(1200px, calc(100% - 2rem));
+	margin: 0 auto;
+	padding-top: 2rem;
+	background: linear-gradient(135deg, rgba(15, 23, 42, 0.03), rgba(233, 75, 60, 0.05));
+}
+
+.elephant-mountain-carousel {
+	position: relative;
+	border-radius: 32px;
+	overflow: hidden;
+	box-shadow: 0 30px 70px rgba(15, 23, 42, 0.15);
+	background: var(--surface);
+}
+
+.elephant-mountain-carousel-viewport {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	aspect-ratio: 16 / 10;
+}
+
+.elephant-mountain-carousel-track {
+	display: flex;
+	transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	height: 100%;
+}
+
+.elephant-mountain-carousel-slide {
+	min-width: 100%;
+	height: 100%;
+	flex-shrink: 0;
+}
+
+.elephant-mountain-carousel-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.elephant-mountain-carousel-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.95);
+	border: 1px solid rgba(15, 23, 42, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	color: var(--text-primary);
+	box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.elephant-mountain-carousel-btn:hover {
+	background: #ffffff;
+	transform: translateY(-50%) scale(1.05);
+	box-shadow: 0 6px 20px rgba(15, 23, 42, 0.2);
+}
+
+.elephant-mountain-carousel-btn-prev {
+	left: 1.5rem;
+}
+
+.elephant-mountain-carousel-btn-next {
+	right: 1.5rem;
+}
+
+.elephant-mountain-carousel-indicators {
+	display: flex;
+	justify-content: center;
+	gap: 0.75rem;
+	margin-top: 1.5rem;
+	padding-bottom: 2rem;
+}
+
+.elephant-mountain-carousel-indicator {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: none;
+	background: rgba(15, 23, 42, 0.2);
+	cursor: pointer;
+	transition: all 0.2s ease;
+	padding: 0;
+}
+
+.elephant-mountain-carousel-indicator:hover {
+	background: rgba(15, 23, 42, 0.4);
+	transform: scale(1.2);
+}
+
+.elephant-mountain-carousel-indicator.is-active {
+	background: var(--accent);
+	width: 32px;
+	border-radius: 5px;
+}
+
+.elephant-mountain-content {
+	width: 100%;
+	background: linear-gradient(135deg, rgba(15, 23, 42, 0.03), rgba(233, 75, 60, 0.05));
+	padding: 4rem 0;
+}
+
+.elephant-mountain-content-inner {
+	width: min(900px, calc(100% - 2rem));
+	margin: 0 auto;
+}
+
+.elephant-mountain-text {
+	margin: 0;
+	font-size: 1.05rem;
+	line-height: 1.8;
+	color: var(--text-muted);
+	text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+	.elephant-mountain-hero {
+		padding: 3rem 0;
+	}
+
+	.elephant-mountain-gallery {
+		padding-top: 1.5rem;
+	}
+
+	.elephant-mountain-carousel-btn {
+		width: 40px;
+		height: 40px;
+	}
+
+	.elephant-mountain-carousel-btn-prev {
+		left: 1rem;
+	}
+
+	.elephant-mountain-carousel-btn-next {
+		right: 1rem;
+	}
+
+	.elephant-mountain-carousel-viewport {
+		aspect-ratio: 4 / 3;
+	}
+
+	.elephant-mountain-content {
+		padding: 3rem 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.elephant-mountain-hero {
+		padding: 2rem 0;
+	}
+
+	.elephant-mountain-gallery {
+		padding-top: 1rem;
+	}
+
+	.elephant-mountain-carousel {
+		border-radius: 24px;
+	}
+
+	.elephant-mountain-carousel-btn {
+		width: 36px;
+		height: 36px;
+	}
+
+	.elephant-mountain-carousel-btn-prev {
+		left: 0.5rem;
+	}
+
+	.elephant-mountain-carousel-btn-next {
+		right: 0.5rem;
+	}
+}
+
+
+

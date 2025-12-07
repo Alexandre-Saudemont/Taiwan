@@ -2,7 +2,7 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	gap: 4rem;
+	gap: 0;
 	align-items: center;
 	padding-bottom: 2rem;
 }
@@ -53,6 +53,8 @@
 	flex-direction: column;
 	gap: 0;
 	position: relative;
+	background: linear-gradient(135deg, rgba(15, 23, 42, 0.03), rgba(233, 75, 60, 0.05));
+	padding-top: 2rem;
 }
 
 .visa-content-card {
@@ -118,12 +120,12 @@
 }
 
 @media screen and (max-width: 768px) {
-	.visa {
-		gap: 3rem;
-	}
-
 	.visa-hero {
 		padding: 3rem 0;
+	}
+
+	.visa-content-section {
+		padding-top: 1.5rem;
 	}
 
 	.visa-content-media {
@@ -144,6 +146,10 @@
 @media screen and (max-width: 480px) {
 	.visa-hero {
 		padding: 2rem 0;
+	}
+
+	.visa-content-section {
+		padding-top: 1rem;
 	}
 
 	.visa-content-media {

@@ -10,6 +10,14 @@ const datas = [
 				label: 'Le Marché du poisson - 台北魚市場',
 				href: '/Taipei/Le-Marché-du-Poisson',
 			},
+			{
+				label: 'Elephant Mountain - 象山',
+				href: '/Taipei/Elephant-Mountain',
+			},
+			{
+				label: 'Jiufen - 九份',
+				href: '/Taipei/Jiufen',
+			},
 		],
 	},
 	{
@@ -19,9 +27,14 @@ const datas = [
 				label: 'La cuisine Taiwanaise - 台灣美食',
 				href: '/La-Cuisine/La-Cuisine-Taiwanaise',
 			},
+		],
+	},
+	{
+		title: 'Nature',
+		subMenu: [
 			{
 				label: 'Le thé - 茶',
-				href: '/La-Cuisine/Le-Thé',
+				href: '/Nature/Le-Thé',
 			},
 		],
 	},
