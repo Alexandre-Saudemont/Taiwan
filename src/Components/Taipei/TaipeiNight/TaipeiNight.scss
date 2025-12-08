@@ -193,10 +193,6 @@
 	.taipei-night-carousel-viewport {
 		aspect-ratio: 4 / 3;
 	}
-
-	.taipei-night-content {
-		padding: 3rem 0;
-	}
 }
 
 @media screen and (max-width: 480px) {
@@ -215,5 +211,46 @@
 
 	.taipei-night-carousel-btn-next {
 		right: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.taipei-night {
+		gap: 2rem;
+		padding-bottom: 1rem;
+	}
+	.taipei-night-hero {
+		padding-top: 1rem;
+	}
+
+	.taipei-night-hero-content {
+		padding: 1.25rem 1rem;
+		border-radius: 20px;
+	}
+
+	.taipei-night-content-inner {
+		padding: 1.25rem 1rem;
+		border-radius: 20px;
+	}
+
+	.taipei-night-carousel {
+		border-radius: 20px;
+	}
+
+	.taipei-night-carousel-btn {
+		width: 32px;
+		height: 32px;
+	}
+
+	.taipei-night-carousel-btn-prev {
+		left: 0.25rem;
+	}
+
+	.taipei-night-carousel-btn-next {
+		right: 0.25rem;
+	}
+
+	.taipei-night-content {
+		padding-bottom: 2rem;
 	}
 }

@@ -200,10 +200,6 @@
 	.taipei-fish-carousel-viewport {
 		aspect-ratio: 4 / 3;
 	}
-
-	.taipei-fish-content {
-		padding: 3rem 0;
-	}
 }
 
 @media screen and (max-width: 480px) {
@@ -222,5 +218,46 @@
 
 	.taipei-fish-carousel-btn-next {
 		right: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.taipei-fish {
+		gap: 2rem;
+		padding-bottom: 1rem;
+	}
+
+	.taipei-fish-hero {
+		padding-top: 1rem;
+	}
+	.taipei-fish-hero-content {
+		padding: 1.25rem 1rem;
+		border-radius: 20px;
+	}
+
+	.taipei-fish-content-inner {
+		padding: 1.25rem 1rem;
+		border-radius: 20px;
+	}
+
+	.taipei-fish-carousel {
+		border-radius: 20px;
+	}
+
+	.taipei-fish-carousel-btn {
+		width: 32px;
+		height: 32px;
+	}
+
+	.taipei-fish-carousel-btn-prev {
+		left: 0.25rem;
+	}
+
+	.taipei-fish-carousel-btn-next {
+		right: 0.25rem;
+	}
+
+	.taipei-fish-content {
+		padding-bottom: 2rem;
 	}
 }

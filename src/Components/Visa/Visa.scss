@@ -148,3 +148,37 @@
 		gap: 1.25rem;
 	}
 }
+
+@media screen and (max-width: 375px) {
+	.visa {
+		gap: 2rem;
+		padding-bottom: 3rem;
+	}
+
+	.visa-hero {
+		margin: 1rem auto 0;
+		border-radius: 20px;
+	}
+
+	.visa-hero-media {
+		border-radius: 20px 20px 0 0;
+		height: clamp(220px, 50vw, 400px);
+	}
+
+	.visa-hero-content {
+		padding: 1.25rem 1rem;
+	}
+
+	.visa-content-section {
+		gap: 1.5rem;
+	}
+
+	.visa-content-card {
+		border-radius: 18px;
+		padding: 1.25rem 1rem;
+	}
+
+	.visa-content-inner {
+		gap: 1rem;
+	}
+}

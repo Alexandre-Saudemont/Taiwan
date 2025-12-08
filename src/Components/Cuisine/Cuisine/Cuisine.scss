@@ -152,3 +152,28 @@
 		gap: 2rem;
 	}
 }
+
+@media screen and (max-width: 375px) {
+	.cuisine {
+		gap: 2rem;
+		padding-bottom: 3rem;
+		padding-top: 1rem;
+	}
+
+	.cuisine-hero-content {
+		padding: 1.25rem 1rem;
+		border-radius: 20px;
+	}
+
+	.cuisine-dishes {
+		gap: 1.5rem;
+	}
+
+	.cuisine-dish {
+		border-radius: 20px;
+	}
+
+	.cuisine-dish-content {
+		padding: 1.25rem 1rem;
+	}
+}

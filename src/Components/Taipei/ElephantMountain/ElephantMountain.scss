@@ -125,7 +125,6 @@
 	justify-content: center;
 	gap: 0.75rem;
 	margin-top: 1.5rem;
-	padding-bottom: 2rem;
 }
 
 .elephant-mountain-carousel-indicator {
@@ -194,10 +193,6 @@
 	.elephant-mountain-carousel-viewport {
 		aspect-ratio: 4 / 3;
 	}
-
-	.elephant-mountain-content {
-		padding: 3rem 0;
-	}
 }
 
 @media screen and (max-width: 480px) {
@@ -220,5 +215,50 @@
 
 	.elephant-mountain-carousel-btn-next {
 		right: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.elephant-mountain {
+		gap: 2rem;
+		padding-bottom: 1rem;
+	}
+
+	.elephant-mountain-hero {
+		padding-top: 1rem;
+	}
+	.elephant-mountain-hero-content {
+		padding: 1.25rem 1rem;
+		border-radius: 20px;
+	}
+
+	.elephant-mountain-content-inner {
+		padding: 1.25rem 1rem;
+		border-radius: 20px;
+	}
+
+	.elephant-mountain-gallery {
+		padding-top: 0.5rem;
+	}
+
+	.elephant-mountain-carousel {
+		border-radius: 20px;
+	}
+
+	.elephant-mountain-carousel-btn {
+		width: 32px;
+		height: 32px;
+	}
+
+	.elephant-mountain-carousel-btn-prev {
+		left: 0.25rem;
+	}
+
+	.elephant-mountain-carousel-btn-next {
+		right: 0.25rem;
+	}
+
+	.elephant-mountain-content {
+		padding-bottom: 2rem;
 	}
 }

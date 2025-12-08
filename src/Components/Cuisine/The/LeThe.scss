@@ -176,3 +176,40 @@
 		gap: 2rem;
 	}
 }
+
+@media screen and (max-width: 375px) {
+	.le-the {
+		gap: 2rem;
+		padding-bottom: 3rem;
+	}
+
+	.le-the-hero {
+		margin: 1rem auto 0;
+		border-radius: 20px;
+	}
+
+	.le-the-hero-media {
+		border-radius: 20px 20px 0 0;
+		height: clamp(220px, 50vw, 400px);
+	}
+
+	.le-the-hero-content {
+		padding: 1.25rem 1rem;
+	}
+
+	.le-the-sections {
+		gap: 1.5rem;
+	}
+
+	.le-the-section {
+		border-radius: 20px;
+	}
+
+	.le-the-section-media {
+		height: clamp(200px, 60vw, 320px);
+	}
+
+	.le-the-section-content {
+		padding: 1.25rem 1rem;
+	}
+}
